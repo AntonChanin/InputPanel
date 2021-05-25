@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url("../../../Fonts/font.css");
+
+.page-time {
+  max-width: 560px;
+  max-height: 320px;
+  background: rgb(123,154,143);
+  background: radial-gradient(circle, rgba(60,143,114) 0%, rgba(0,112,71,1) 19%, rgba(0,31,19,1) 86%, rgba(0,0,0,1) 100%);
+  border-radius: 15px;
+  border: 4mm ridge darkolivegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 0px 0px 11px rgb(53 33 9), 8px 2px 20px 11px rgb(0 0 0);
+  margin-left: 400px;
+}
+
+.root-time__time-now {
+  display: contents;
+  transform: translateX(-50%) translateY(-50%);
+  color: #00FF41;
+  font-size: 60px;
+  font-family: DotGothic16;
+  font-family: MK-90;
+  letter-spacing: 7px;
+}
+
+
+@media screen and (max-width: 681px) {
+  .page-time {
+    max-height: 280px;
+    margin-left: 550px;
+  }
+  .root-time__time-now {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .page-time {
+    max-width: 175px;
+    min-height: 175px;
+    margin-left: 630px;
+  }
+  .root-time__time-now {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-time {
+    margin-left: 152%;
+  }
+}

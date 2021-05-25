@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url("../../Fonts/font.css");
+
+.edit-form {
+  max-width: 512px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e09f4f;
+  background: rgb(231,185,129);
+  background: radial-gradient(circle, rgba(231,185,129,1) 0%, rgba(224,159,79,1) 24%, rgba(170,120,58,1) 78%, rgb(137 93 38) 100%);
+  min-height: 235px;
+  box-shadow: 6px 0px 0px 11px rgb(146 101 46), 8px 2px 20px 11px rgb(0 0 0);
+}
+
+.edit-form__edit-area {
+  margin: 20px 0;
+  width: 50%;
+  min-height: 120px;
+  background: rgb(123,154,143);
+  background: radial-gradient(circle, rgba(60,143,114) 0%, rgba(0,112,71,1) 19%, rgba(0,31,19,1) 86%, rgba(0,0,0,1) 100%);
+  overflow-y: scroll;
+  border-radius: 15px;
+  border: 4mm ridge darkolivegreen;
+  font-family: DotGothic16;
+  font-family: MK-90;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  color:#00FF41;
+}
+
+.edit-form__edit-btn {
+  width: auto;
+  height: max-content;
+}
+@media screen and (max-width: 920px) {
+  .edit-form {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .edit-form {
+    max-width: 320px;
+    min-height: 205px;
+  }
+}
+
+
+
+@media screen and (max-width: 375px) {
+  .edit-form {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    margin: 20px 5px;
+    max-height: 160px;
+  }
+  .edit-form__edit-area {
+    width: auto;
+  }
+ }
+
+ @media screen and (max-width: 320px) {
+  .edit-form {
+    max-width: 190px;
+  }
+  .edit-form__edit-area {
+    max-width: 150px;
+  }
+ }

@@ -1,0 +1,111 @@
+.page-list {
+  max-width: 1024px;
+  background: radial-gradient(circle, rgba(231,185,129,1) 0%, rgba(224,159,79,1) 24%, rgba(170,120,58,1) 78%, rgb(137 93 38) 100%);
+  box-shadow: 6px 0px 0px 11px rgb(146 101 46), 8px 2px 20px 11px rgb(0 0 0);
+  padding: 10px;
+  margin: 30px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(123,154,143);
+  background: radial-gradient(circle, rgba(60,143,114) 0%, rgba(0,112,71,1) 19%, rgba(0,31,19,1) 86%, rgba(0,0,0,1) 100%);
+  overflow-y: scroll;
+  height: 430px;
+  border-radius: 15px;
+  border: 4mm ridge darkolivegreen;
+  padding: 20px 10px 20px 30px;
+  width: 512px;
+  max-width: 90%;
+  margin: 0px auto;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.list__item  {
+  margin: 0.5rem 0;
+  text-align: justify;
+  display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.list__item_auto-type :last-child {
+  font-family: sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #000, #000);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+#cursor {
+  border-left: .1em solid $font;
+  animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .page-list {
+    max-width: 680px;
+    margin-left: 85px;
+  }
+  .list {
+    max-width: 340px;
+  }
+  .keyboard { 
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 681px) {
+  .page-list {
+    max-width: 680px;
+    margin: 20px 70px 30px 70px;
+  }
+  .list {
+    height: 264px;
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .page-list {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .page-list {
+    max-width: 375px;
+  }
+  .list {
+    max-width: 230px;
+    margin: 0px;
+    max-height: 260px;
+    height: 168px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page-list {
+    margin-left: 30px;
+    max-height: 530px;
+    margin-right: auto;
+  }
+  .list {
+    max-width: 145px;
+    max-height: 125px;
+  }
+}

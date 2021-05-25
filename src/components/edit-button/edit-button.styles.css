@@ -1,0 +1,37 @@
+.btn {
+  width: 5rem;
+  height: 4rem;
+  color: #d4c860;
+  font-size: x-large;
+  text-shadow: -2px 1px 6px black;
+  text-transform: uppercase;
+  background-color: #aca142;
+  background: radial-gradient(circle, #d4c860 0%, rgb(142 133 57) 100%);
+  border: none;
+  outline: none;
+  box-shadow: 6px 0px 0px 11px rgb(142 133 57), 8px 2px 20px 11px rgb(82 77 32);
+  border-radius: 50px;
+}
+
+.btn:active {
+  box-shadow: 7px 3px 0px 11px rgb(142 133 57), 13px 14px 20px 11px rgb(82 77 32);
+}
+
+@media screen and (max-width: 681px) {
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    color: #d4c860;
+    font-size: 0.9rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .btn {
+    width: 4rem;
+    height: 2rem;
+    font-size: medium;
+  }
+}
