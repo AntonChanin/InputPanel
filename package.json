@@ -5,7 +5,7 @@
   "homepage": "./",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AntonChanin/RockStoneTest.git"
+    "url": "https://github.com/AntonChanin/InputPanel.git"
   },
   "dependencies": {
     "@babel/core": "7.12.3",
